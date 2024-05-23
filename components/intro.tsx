@@ -52,9 +52,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello! I'm Emmanuel.</span> I recently graduated from{" "}
+        <span className="font-bold">Hello! I&apos;m Emmanuel.</span> I recently graduated from{" "}
         <span className="font-bold">California State University, Monterey Bay (CSU MB)</span> with a{" "}
-        <span className="font-bold">bachelor's degree in Computer Science.</span> I am currently looking for my next role as a{" "}
+        <span className="font-bold">bachelor&apos;s degree in Computer Science.</span> I am currently looking for my next role as a{" "}
         <span className="font-bold">Data Analyst.</span> I have a passion for technology, data, and{" "}
         <span className="italic">storytelling through data visualization.</span>
       </motion.h1>
