@@ -1,7 +1,7 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main><h1></h1>Hello World </main>
+    <main className="flex flex-col items-center px-4">
+      <h1>Hello World </h1>
+    </main>
   )
 }

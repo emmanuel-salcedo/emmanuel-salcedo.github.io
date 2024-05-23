@@ -21,8 +21,3 @@ body {
   padding: 1rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
