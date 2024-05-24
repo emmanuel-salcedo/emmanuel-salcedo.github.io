@@ -33,8 +33,8 @@ export default function Intro() {
 
           <motion.span
             className="absolute bottom-0 right-3 text-4xl"
-            initial={{ opacity: 0, scale: 4 }}
-            animate={{ opacity: 1, scale: 2 }}
+            initial={{ opacity: 0, scale: 2 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
               stiffness: 125,
