@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <h2 className="text-4xl font-bold p-3">About me</h2>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         Hello! I&apos;m Emmanuel. I recently graduated from{" "}
         <span className="font-medium">California State University, Monterey Bay (CSU MB)</span> with a{" "}

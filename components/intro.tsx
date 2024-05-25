@@ -9,7 +9,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 export default function Intro() {
   return (
-    <section>
+    <section className="scroll-mt-28" id="home">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
