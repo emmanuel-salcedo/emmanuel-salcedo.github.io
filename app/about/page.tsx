@@ -3,10 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import SectionHeading from "./section-heading";
+import SectionHeading from "@/components/section-heading";
 
 export default function About() {
   return (
+    <main className="flex flex-col items-center px-4">
     <motion.section
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
@@ -65,5 +66,6 @@ export default function About() {
         </motion.div>
       </motion.div>
     </motion.section>
+    </main>
   );
 }
