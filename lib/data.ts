@@ -7,7 +7,7 @@ import { FaGoogle } from "react-icons/fa";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import SnapshotImg from "@/public/snapshot.png";
+import SnapshotImg from "@/public/Snapshot.png";
 import pkdexappImg from "@/public/pkdexapp.png";
 
 export const links = [
