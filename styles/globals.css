@@ -1,0 +1,15 @@
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary: #228B22;
+  --primary-dark: #006400;
+  --secondary: #FBBF24;
+  --secondary-dark: #B45309;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FBBF24;
+  --text-dark: #E5E7EB;
+  --text-light: #D1FAE5;
+}

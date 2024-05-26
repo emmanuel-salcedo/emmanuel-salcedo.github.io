@@ -1,16 +1,33 @@
-import React from "react";
+"use client";
+
+import Link from 'next/link';
+import { FaHome, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="mt-10 mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        &copy; 2024 Emmanuel Salcedo. All rights reserved.
-      </small>
-      <p className="text-xs">
-        <span className="mt-28 font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
-      </p>
+    <footer className="bg-primary text-text-dark py-4 w-full fixed bottom-0">
+      <div className="container mx-auto text-center">
+        <div className="flex justify-center space-x-4 mb-4">
+          <Link href="/" passHref>
+            <div className="bg-primary-dark hover:bg-primary-dark text-text-primary font-bold p-3 rounded-full transition duration-300 cursor-pointer flex items-center justify-center">
+              <FaHome size={24} />
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/emmanuelsalcedo/" passHref>
+            <div className="bg-primary-dark hover:bg-primary-dark text-text-primary font-bold p-3 rounded-full transition duration-300 cursor-pointer flex items-center justify-center">
+              <FaLinkedin size={24} />
+            </div>
+          </Link>
+          <Link href="https://github.com/your-github-profile" passHref>
+            <div className="bg-primary-dark hover:bg-primary-dark text-text-primary font-bold p-3 rounded-full transition duration-300 cursor-pointer flex items-center justify-center">
+              <FaGithub size={24} />
+            </div>
+          </Link>
+        </div>
+        <p className="text-sm text-text-primary">
+          &copy; {new Date().getFullYear()} Emmanuel Salcedo. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }
