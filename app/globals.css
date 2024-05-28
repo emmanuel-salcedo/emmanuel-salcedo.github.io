@@ -1,15 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-html {
-  --line-color: #e5e7eb;
+:root {
+  --primary: #228B22;
+  --primary-dark: #006400;
+  --secondary: #FBBF24;
+  --secondary-dark: #B45309;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FBBF24;
+  --text-dark: #E5E7EB;
+  --text-light: #D1FAE5;
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+.pdf-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Adjust max-width as needed */
+  height: 140vh; /* Take full height of the viewport */
+  margin: 0 auto; /* Center the iframe */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.borderBlack {
-  @apply border border-black/10;
+.pdf-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }

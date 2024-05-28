@@ -27,6 +27,10 @@ export const links = [
     name: "Experience",
     hash: "/experience",
   },
+  {
+    name: "Resume",
+    hash: "/resume",
+  },
 ] as const;
 
 export const experiencesData = [
@@ -89,17 +93,23 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "SnapShot Web Application for OACYS Solutions",
-    description:
+    description: "A web application to monitor network devices in real-time.",
+    text:
       "Led the development of the SnapShot web application, achieving a 30% increase in real-time network device monitoring efficiency for OACYS Solutions. Engineered a Flask-based robust backend, managing large data sets and implementing RESTful API endpoints, which improved data retrieval efficiency by 40%. Designed a dynamic frontend with HTML, CSS, and JavaScript, incorporating interactive data visualizations that boosted user engagement by 50%. Conducted statistical analysis on network performance data, uncovering trends that led to a 20% improvement in network optimization strategies. Automated ETL processes for network data, reducing manual effort by 60% and minimizing data processing errors by over 90%. Collaborated with IT infrastructure teams, aligning KPI reporting with organizational objectives and driving a 25% enhancement in data-centric network management solutions.",
     tags: ["Flask", "HTML", "CSS", "JavaScript", "RESTful API"],
     imageUrl: SnapshotImg,
+    slug: "snapshot-web-application",
+    githubLink: "https://github.com/itoptics/Snapshot",
   },
   {
     title: "Simple Pokédex Android App",
-    description:
-      "Created a Simple Pokédex Android App that communicated with the Pokemon API, providing a user-friendly interface to explore Pokémon data. Implemented efficient data retrieval and display mechanisms using Java and SQL, ensuring smooth user experience.",
+    description: "An Android app to explore Pokémon data.",
+    text:
+      "Created a Simple Pokédex Android App that communicated with the Pokemon API, providing a user-friendly interface to explore Pokémon data. Implemented efficient data retrieval and display mechanisms using Java and SQL, ensuring smooth user experience. The app allows users to search for Pokémon, view detailed information about each Pokémon, and maintain a list of their favorite Pokémon. The project involved designing a clean and intuitive UI, optimizing data requests to the API, and ensuring that the app performs well on various Android devices.",
     tags: ["Android", "Java", "CSS", "API", "SQL"],
     imageUrl: pkdexappImg,
+    slug: "simple-pokedex-android-app",
+    // No GitHub link for this project
   },
 ] as const;
 

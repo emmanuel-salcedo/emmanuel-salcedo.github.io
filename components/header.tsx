@@ -8,17 +8,17 @@ import clsx from "clsx";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-[999] bg-primary bg-opacity-80 dark:bg-primary-dark dark:bg-opacity-75 shadow-lg backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-[999] bg-primary bg-opacity-80 shadow-lg backdrop-blur-md">
       <motion.div
-        className="flex items-center justify-between h-[4.5rem] px-6 sm:h-[3.25rem] sm:px-12"
+        className="flex items-center justify-between h-[4.5rem] px-6 sm:h-[3.25rem] sm:px-12 whitespace-nowrap"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <div className="text-xl font-semibold text-text-primary dark:text-text-dark">
+        <Link href="/" className="text-xl font-semibold text-text-primary whitespace-nowrap hover:text-text-secondary transition">
           Emmanuel Salcedo
-        </div>
+        </Link>
         <nav className="flex items-center">
-          <ul className="flex items-center gap-5 text-[0.9rem] font-medium text-text-primary dark:text-text-dark">
+          <ul className="flex items-center gap-5 text-[0.9rem] font-medium text-text-primary">
             {links.map((link) => (
               <motion.li
                 className="relative"
@@ -29,7 +29,7 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    "px-3 py-2 hover:text-text-secondary dark:hover:text-text-light transition"
+                    "px-3 py-2 hover:text-text-secondary transition"
                   )}
                   href={link.hash}
                 >
