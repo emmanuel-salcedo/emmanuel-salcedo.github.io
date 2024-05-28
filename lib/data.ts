@@ -109,7 +109,7 @@ export const projectsData = [
     tags: ["Android", "Java", "CSS", "API", "SQL"],
     imageUrl: pkdexappImg,
     slug: "simple-pokedex-android-app",
-    // No GitHub link for this project
+    githubLink:"",
   },
 ] as const;
 
